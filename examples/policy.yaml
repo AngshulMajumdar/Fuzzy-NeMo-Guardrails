@@ -1,0 +1,39 @@
+version: 1
+phases:
+  input:
+    inference: sugeno
+    and_operator: min
+    required: [injection_risk, toxicity_risk]
+    features:
+      injection_risk:
+        low: {trapezoid: [0, 0, 0.18, 0.45]}
+        medium: {triangle: [0.2, 0.5, 0.8]}
+        high: {trapezoid: [0.55, 0.82, 1, 1]}
+      toxicity_risk:
+        low: {trapezoid: [0, 0, 0.2, 0.45]}
+        high: {trapezoid: [0.55, 0.8, 1, 1]}
+    thresholds: {allow_below: 0.35, block_at: 0.72}
+    hard_veto: {injection_risk: 0.95, toxicity_risk: 0.98}
+    rules:
+      - {id: safe, if: {injection_risk: low, toxicity_risk: low}, then: 0.08}
+      - {id: ambiguous, if: {injection_risk: medium}, then: 0.5}
+      - {id: injected, if: {injection_risk: high}, then: 0.93}
+      - {id: toxic, if: {toxicity_risk: high}, then: 0.98}
+  output:
+    inference: mamdani
+    required: [unsupported_claim_risk]
+    features:
+      unsupported_claim_risk:
+        low: {trapezoid: [0, 0, 0.2, 0.4]}
+        medium: {triangle: [0.2, 0.5, 0.8]}
+        high: {trapezoid: [0.6, 0.85, 1, 1]}
+    output_sets:
+      safe: {triangle: [0, 0, 0.25]}
+      uncertain: {triangle: [0.25, 0.5, 0.75]}
+      unsafe: {triangle: [0.75, 1, 1]}
+    thresholds: {allow_below: 0.35, block_at: 0.72}
+    hard_veto: {unsupported_claim_risk: 0.98}
+    rules:
+      - {id: evidence_supported, if: {unsupported_claim_risk: low}, then: safe}
+      - {id: partly_supported, if: {unsupported_claim_risk: medium}, then: uncertain}
+      - {id: unsupported, if: {unsupported_claim_risk: high}, then: unsafe}

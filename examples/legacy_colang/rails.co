@@ -1,0 +1,7 @@
+# Populate scores from a trusted application-side detector before fuzzy evaluation.
+define flow fuzzy nemo input
+  $detected = execute trusted_fuzzy_detector
+  $allowed = execute fuzzy_nemo_input
+  if not $allowed
+    bot refuse to respond
+    stop

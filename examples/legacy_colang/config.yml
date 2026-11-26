@@ -1,0 +1,7 @@
+# CPU-only Colang action example. No main LLM required for deterministic input checking.
+colang_version: "1.0"
+models: []
+rails:
+  input:
+    flows:
+      - fuzzy nemo input
