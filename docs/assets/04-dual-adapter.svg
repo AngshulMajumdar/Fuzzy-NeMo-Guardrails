@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071328"/><stop offset=".62" stop-color="#101e3b"/><stop offset="1" stop-color="#091428"/></linearGradient>
+ <linearGradient id="panelgrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#16365a"/><stop offset="1" stop-color="#11233b"/></linearGradient>
+ <marker id="arr" markerWidth="11" markerHeight="11" refX="8" refY="5" orient="auto"><path d="M1,1 L9,5 L1,9 Z" fill="#52d8f5" /></marker>
+ <filter id="glow"><feGaussianBlur stdDeviation="10" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ </defs>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="url(#bg)"/>
+<path d="M40,0 L40,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M96,0 L96,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M152,0 L152,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M208,0 L208,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M264,0 L264,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M320,0 L320,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M376,0 L376,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M432,0 L432,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M488,0 L488,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M544,0 L544,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M600,0 L600,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M656,0 L656,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M712,0 L712,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M768,0 L768,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M824,0 L824,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M880,0 L880,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M936,0 L936,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M992,0 L992,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1048,0 L1048,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1104,0 L1104,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1160,0 L1160,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1216,0 L1216,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1272,0 L1272,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1328,0 L1328,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1384,0 L1384,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1440,0 L1440,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1496,0 L1496,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1552,0 L1552,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,35 L1600,35" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,91 L1600,91" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,147 L1600,147" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,203 L1600,203" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,259 L1600,259" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,315 L1600,315" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,371 L1600,371" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,427 L1600,427" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,483 L1600,483" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,539 L1600,539" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,595 L1600,595" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,651 L1600,651" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,707 L1600,707" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,763 L1600,763" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,819 L1600,819" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,875 L1600,875" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<rect x="56" y="48" width="12" height="81" rx="5" fill="#2ae6cd"/>
+<text x="90" y="70" fill="#2ae6cd" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="750" text-anchor="start" >04 / INTEGRATION</text>
+<text x="88" y="121" fill="#e8f6ff" font-family="DejaVu Sans,Arial,sans-serif" font-size="51" font-weight="800" text-anchor="start" >One fuzzy engine. Two NeMo adapters.</text>
+<text x="89" y="164" fill="#a7bdcf" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="500" text-anchor="start" >No fork of NVIDIA NeMo; distinct, explicit integration contracts.</text>
+<path d="M65,851 L1537,851" fill="none" stroke="#35516c" stroke-width="2" stroke-linecap="round" />
+<text x="68" y="876" fill="#a7bdcf" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="500" text-anchor="start" >FUZZY NEMO GUARDRAILS  ·  AN INDEPENDENT SOFTWARE EXTENSION</text>
+<text x="1538" y="876" fill="#a7bdcf" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="500" text-anchor="end" >github.com/AngshulMajumdar/Fuzzy-NeMo-Guardrails</text>
+<rect x="524" y="223" width="552" height="154" rx="26" fill="url(#panelgrad)" stroke="#2ae6cd" stroke-width="2"/>
+<text x="800" y="272" fill="#e8f6ff" font-family="DejaVu Sans,Arial,sans-serif" font-size="35" font-weight="800" text-anchor="middle" >Shared FuzzyPolicy</text>
+<text x="800" y="311" fill="#a7bdcf" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="500" text-anchor="middle" >YAML rules + input/output phases</text>
+<text x="800" y="343" fill="#2ae6cd" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle" >ALLOW · REVIEW · BLOCK</text>
+<path d="M800,377 L800,414" fill="none" stroke="#52d8f5" stroke-width="4" stroke-linecap="round" />
+<path d="M440,414 L1160,414" fill="none" stroke="#52d8f5" stroke-width="4" stroke-linecap="round" />
+<path d="M440,414 L440,453" fill="none" stroke="#52d8f5" stroke-width="4" stroke-linecap="round" marker-end="url(#arr)" />
+<path d="M1160,414 L1160,453" fill="none" stroke="#52d8f5" stroke-width="4" stroke-linecap="round" marker-end="url(#arr)" />
+<rect x="85" y="464" width="660" height="294" rx="26" fill="url(#panelgrad)" stroke="#f8ca65" stroke-width="2"/>
+<rect x="115" y="489" width="160" height="37" rx="18" fill="#f8ca65" opacity=".13"/><text x="195" y="515" fill="#f8ca65" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="700" text-anchor="middle" >ADAPTER</text>
+<text x="119" y="566" fill="#e8f6ff" font-family="DejaVu Sans,Arial,sans-serif" font-size="39" font-weight="850" text-anchor="start" >LLMRails</text>
+<text x="119" y="606" fill="#a7bdcf" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="500" text-anchor="start" >Legacy NeMo engine</text>
+<circle cx="133" cy="648" r="5" fill="#f8ca65"/>
+<text x="150" y="655" fill="#e8f6ff" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="530" text-anchor="start" >Python wrapper: check_async / generate_async</text>
+<circle cx="133" cy="681" r="5" fill="#f8ca65"/>
+<text x="150" y="688" fill="#e8f6ff" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="530" text-anchor="start" >Optional Colang 1.0 Python action</text>
+<circle cx="133" cy="714" r="5" fill="#f8ca65"/>
+<text x="150" y="721" fill="#e8f6ff" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="530" text-anchor="start" >Trusted context supplies detector scores</text>
+<rect x="850" y="464" width="660" height="294" rx="26" fill="url(#panelgrad)" stroke="#52d8f5" stroke-width="2"/>
+<rect x="880" y="489" width="160" height="37" rx="18" fill="#52d8f5" opacity=".13"/><text x="960" y="515" fill="#52d8f5" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="700" text-anchor="middle" >ADAPTER</text>
+<text x="884" y="566" fill="#e8f6ff" font-family="DejaVu Sans,Arial,sans-serif" font-size="39" font-weight="850" text-anchor="start" >IORails</text>
+<text x="884" y="606" fill="#a7bdcf" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="500" text-anchor="start" >New NeMo engine</text>
+<circle cx="898" cy="648" r="5" fill="#52d8f5"/>
+<text x="915" y="655" fill="#e8f6ff" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="530" text-anchor="start" >Python wrapper: check_async / generate_async</text>
+<circle cx="898" cy="681" r="5" fill="#52d8f5"/>
+<text x="915" y="688" fill="#e8f6ff" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="530" text-anchor="start" >No custom Python action registration</text>
+<circle cx="898" cy="714" r="5" fill="#52d8f5"/>
+<text x="915" y="721" fill="#e8f6ff" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="530" text-anchor="start" >Uses official engine checking interface</text>
+<text x="800" y="797" fill="#a7bdcf" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="550" text-anchor="middle" >Both preserve NeMo-native blocks. Neither adapter performs detector inference.</text>
+</svg>

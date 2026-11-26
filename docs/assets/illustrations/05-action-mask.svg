@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1152" height="664" viewBox="0 0 1152 664" role="img" aria-labelledby="title desc">
+<title id='title'>A hard gate removes forbidden actions</title><desc id='desc'>Actions on the wrong stage, actions failing content checks, and actions over the risk limit receive probability exactly zero. Stop remains feasible and closes the session.</desc>
+<rect width="1152" height="664" rx="30" fill="#f5f5f0"/>
+<path d="M0 182H1152" stroke="#d8e3df"/>
+<rect x="36" y="29" width="66" height="28" rx="14" fill="#d9efe8"/>
+<text x="69" y="48" fill="#008c83" font-size="15" font-weight="800" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif">05</text>
+<text x="120" y="50" fill="#527079" font-size="15" font-weight="700" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">CSFSM  /  VISUAL FIELD GUIDE</text>
+<text x="52" y="109" fill="#102c36" font-size="36" font-weight="800" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">A hard gate removes forbidden actions</text>
+<text x="52" y="145" fill="#527079" font-size="18" font-weight="500" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">Stage rules, protocol successors, content checks and the risk limit build the mask.</text>
+<path d="M36 614H1116" stroke="#d8e3df"/>
+<text x="52" y="643" fill="#527079" font-size="12" font-weight="700" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">CSFSM GUARDRAILS  ·  ANGSHUL MAJUMDAR  ·  IIIT-DELHI</text>
+<text x="1102" y="643" fill="#527079" font-size="11" font-weight="500" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">FIGURE 05 / 08</text>
+<rect x="52" y="219" width="245" height="48" rx="10" fill="#e4ece9" stroke="none" stroke-width="1.4"/>
+<text x="66" y="249" fill="#527079" font-size="14" font-weight="800" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">ACTION</text>
+<rect x="298" y="219" width="179" height="48" rx="10" fill="#e4ece9" stroke="none" stroke-width="1.4"/>
+<text x="312" y="249" fill="#527079" font-size="14" font-weight="800" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">STAGE</text>
+<rect x="484" y="219" width="278" height="48" rx="10" fill="#e4ece9" stroke="none" stroke-width="1.4"/>
+<text x="498" y="249" fill="#527079" font-size="14" font-weight="800" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">HARD CHECK</text>
+<rect x="772" y="219" width="140" height="48" rx="10" fill="#e4ece9" stroke="none" stroke-width="1.4"/>
+<text x="786" y="249" fill="#527079" font-size="14" font-weight="800" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">RISK</text>
+<rect x="928" y="219" width="170" height="48" rx="10" fill="#e4ece9" stroke="none" stroke-width="1.4"/>
+<text x="942" y="249" fill="#527079" font-size="14" font-weight="800" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">RESULT</text>
+<rect x="52" y="280" width="1046" height="54" rx="11" fill="#ffffff" stroke="none" stroke-width="1.4"/>
+<rect x="928" y="288" width="153" height="37" rx="18" fill="#cdeee5" stroke="none" stroke-width="1.4"/>
+<text x="68" y="315" fill="#102c36" font-size="18" font-weight="750" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">release</text>
+<text x="314" y="315" fill="#527079" font-size="17" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">output</text>
+<text x="500" y="315" fill="#102c36" font-size="17" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">content OK</text>
+<text x="788" y="315" fill="#102c36" font-size="17" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">&lt;= limit</text>
+<text x="1004" y="313" fill="#008c83" font-size="16" font-weight="800" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif">eligible</text>
+<rect x="52" y="343" width="1046" height="54" rx="11" fill="#ffffff" stroke="none" stroke-width="1.4"/>
+<rect x="928" y="351" width="153" height="37" rx="18" fill="#ffe4d8" stroke="none" stroke-width="1.4"/>
+<text x="68" y="378" fill="#102c36" font-size="18" font-weight="750" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">execute_tool</text>
+<text x="314" y="378" fill="#527079" font-size="17" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">tool</text>
+<text x="500" y="378" fill="#102c36" font-size="17" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">wrong stage</text>
+<text x="788" y="378" fill="#102c36" font-size="17" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">&lt;= limit</text>
+<text x="1004" y="376" fill="#d75d48" font-size="16" font-weight="800" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif">p = 0</text>
+<rect x="52" y="406" width="1046" height="54" rx="11" fill="#ffffff" stroke="none" stroke-width="1.4"/>
+<rect x="928" y="414" width="153" height="37" rx="18" fill="#cdeee5" stroke="none" stroke-width="1.4"/>
+<text x="68" y="441" fill="#102c36" font-size="18" font-weight="750" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">clarify</text>
+<text x="314" y="441" fill="#527079" font-size="17" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">output</text>
+<text x="500" y="441" fill="#102c36" font-size="17" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">content OK</text>
+<text x="788" y="441" fill="#102c36" font-size="17" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">0</text>
+<text x="1004" y="439" fill="#008c83" font-size="16" font-weight="800" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif">eligible</text>
+<rect x="52" y="469" width="1046" height="54" rx="11" fill="#ffffff" stroke="none" stroke-width="1.4"/>
+<rect x="928" y="477" width="153" height="37" rx="18" fill="#fff0ce" stroke="none" stroke-width="1.4"/>
+<text x="68" y="504" fill="#102c36" font-size="18" font-weight="750" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">stop</text>
+<text x="314" y="504" fill="#527079" font-size="17" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">all</text>
+<text x="500" y="504" fill="#102c36" font-size="17" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">always feasible</text>
+<text x="788" y="504" fill="#102c36" font-size="17" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">0</text>
+<text x="1004" y="502" fill="#a16a15" font-size="16" font-weight="800" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif">eligible</text>
+<rect x="52" y="556" width="1048" height="48" rx="13" fill="#e7f2ee" stroke="none" stroke-width="1.4"/>
+<text x="70" y="577" fill="#102c36" font-size="15" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">Only the stage&#x27;s permit action can set allowed=true; other actions return fixed fallback text.</text>
+</svg>

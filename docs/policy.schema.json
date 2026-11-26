@@ -1,0 +1,395 @@
+{
+  "$defs": {
+    "ActionSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "stages": {
+          "items": {
+            "enum": [
+              "input",
+              "output",
+              "tool"
+            ],
+            "type": "string"
+          },
+          "title": "Stages",
+          "type": "array"
+        },
+        "utility": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Utility",
+          "type": "array"
+        },
+        "risk": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Risk",
+          "type": "array"
+        },
+        "message": {
+          "default": "",
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "stages",
+        "utility",
+        "risk"
+      ],
+      "title": "ActionSpec",
+      "type": "object"
+    },
+    "JointMatrix": {
+      "additionalProperties": false,
+      "properties": {
+        "protocol_state": {
+          "title": "Protocol State",
+          "type": "string"
+        },
+        "previous_action": {
+          "title": "Previous Action",
+          "type": "string"
+        },
+        "event": {
+          "title": "Event",
+          "type": "string"
+        },
+        "observation": {
+          "title": "Observation",
+          "type": "string"
+        },
+        "matrix": {
+          "items": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          },
+          "title": "Matrix",
+          "type": "array"
+        }
+      },
+      "required": [
+        "protocol_state",
+        "previous_action",
+        "event",
+        "observation",
+        "matrix"
+      ],
+      "title": "JointMatrix",
+      "type": "object"
+    },
+    "PatternRule": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "pattern": {
+          "title": "Pattern",
+          "type": "string"
+        },
+        "stages": {
+          "items": {
+            "enum": [
+              "input",
+              "output",
+              "tool"
+            ],
+            "type": "string"
+          },
+          "title": "Stages",
+          "type": "array"
+        }
+      },
+      "required": [
+        "code",
+        "pattern"
+      ],
+      "title": "PatternRule",
+      "type": "object"
+    },
+    "ProtocolRule": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "default": "*",
+          "title": "Source",
+          "type": "string"
+        },
+        "action": {
+          "default": "*",
+          "title": "Action",
+          "type": "string"
+        },
+        "event": {
+          "title": "Event",
+          "type": "string"
+        },
+        "target": {
+          "title": "Target",
+          "type": "string"
+        }
+      },
+      "required": [
+        "event",
+        "target"
+      ],
+      "title": "ProtocolRule",
+      "type": "object"
+    },
+    "ToolSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "requires_grant": {
+          "default": true,
+          "title": "Requires Grant",
+          "type": "boolean"
+        },
+        "requires_verification": {
+          "default": true,
+          "title": "Requires Verification",
+          "type": "boolean"
+        }
+      },
+      "title": "ToolSpec",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "default": "default",
+      "title": "Name",
+      "type": "string"
+    },
+    "version": {
+      "default": "1",
+      "title": "Version",
+      "type": "string"
+    },
+    "states": {
+      "items": {
+        "type": "string"
+      },
+      "title": "States",
+      "type": "array"
+    },
+    "observations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Observations",
+      "type": "array"
+    },
+    "prior": {
+      "items": {
+        "type": "number"
+      },
+      "title": "Prior",
+      "type": "array"
+    },
+    "transitions": {
+      "additionalProperties": {
+        "items": {
+          "items": {
+            "type": "number"
+          },
+          "type": "array"
+        },
+        "type": "array"
+      },
+      "title": "Transitions",
+      "type": "object"
+    },
+    "emissions": {
+      "items": {
+        "items": {
+          "type": "number"
+        },
+        "type": "array"
+      },
+      "title": "Emissions",
+      "type": "array"
+    },
+    "joint_kernels": {
+      "items": {
+        "$ref": "#/$defs/JointMatrix"
+      },
+      "title": "Joint Kernels",
+      "type": "array"
+    },
+    "actions": {
+      "items": {
+        "$ref": "#/$defs/ActionSpec"
+      },
+      "title": "Actions",
+      "type": "array"
+    },
+    "protocol_states": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Protocol States",
+      "type": "array"
+    },
+    "initial_protocol_state": {
+      "default": "unverified",
+      "title": "Initial Protocol State",
+      "type": "string"
+    },
+    "safe_protocol_states": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Safe Protocol States",
+      "type": "array"
+    },
+    "closed_state": {
+      "default": "closed",
+      "title": "Closed State",
+      "type": "string"
+    },
+    "verified_states": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Verified States",
+      "type": "array"
+    },
+    "trusted_events": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Trusted Events",
+      "type": "array"
+    },
+    "protocol_rules": {
+      "items": {
+        "$ref": "#/$defs/ProtocolRule"
+      },
+      "title": "Protocol Rules",
+      "type": "array"
+    },
+    "patterns": {
+      "items": {
+        "$ref": "#/$defs/PatternRule"
+      },
+      "title": "Patterns",
+      "type": "array"
+    },
+    "tools": {
+      "additionalProperties": {
+        "$ref": "#/$defs/ToolSpec"
+      },
+      "title": "Tools",
+      "type": "object"
+    },
+    "temperature": {
+      "default": 0.7,
+      "exclusiveMinimum": 0,
+      "maximum": 100,
+      "title": "Temperature",
+      "type": "number"
+    },
+    "risk_threshold": {
+      "default": 0.2,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Risk Threshold",
+      "type": "number"
+    },
+    "uncertainty_radius": {
+      "default": 0.02,
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Uncertainty Radius",
+      "type": "number"
+    },
+    "selection": {
+      "default": "max",
+      "enum": [
+        "max",
+        "sample"
+      ],
+      "title": "Selection",
+      "type": "string"
+    },
+    "risk_semantics": {
+      "default": "model_score",
+      "enum": [
+        "model_score",
+        "conditional_bound"
+      ],
+      "title": "Risk Semantics",
+      "type": "string"
+    },
+    "envelope_description": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Envelope Description"
+    },
+    "session_alpha": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Session Alpha"
+    },
+    "max_decisions": {
+      "default": 100,
+      "maximum": 10000,
+      "minimum": 1,
+      "title": "Max Decisions",
+      "type": "integer"
+    },
+    "max_clarifications": {
+      "default": 3,
+      "maximum": 100,
+      "minimum": 0,
+      "title": "Max Clarifications",
+      "type": "integer"
+    },
+    "session_ttl_seconds": {
+      "default": 3600,
+      "maximum": 604800,
+      "minimum": 1,
+      "title": "Session Ttl Seconds",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "states",
+    "observations",
+    "prior",
+    "transitions",
+    "emissions",
+    "actions"
+  ],
+  "title": "Policy",
+  "type": "object"
+}

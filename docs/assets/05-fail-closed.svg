@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071328"/><stop offset=".62" stop-color="#101e3b"/><stop offset="1" stop-color="#091428"/></linearGradient>
+ <linearGradient id="panelgrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#16365a"/><stop offset="1" stop-color="#11233b"/></linearGradient>
+ <marker id="arr" markerWidth="11" markerHeight="11" refX="8" refY="5" orient="auto"><path d="M1,1 L9,5 L1,9 Z" fill="#52d8f5" /></marker>
+ <filter id="glow"><feGaussianBlur stdDeviation="10" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ </defs>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="url(#bg)"/>
+<path d="M40,0 L40,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M96,0 L96,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M152,0 L152,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M208,0 L208,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M264,0 L264,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M320,0 L320,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M376,0 L376,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M432,0 L432,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M488,0 L488,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M544,0 L544,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M600,0 L600,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M656,0 L656,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M712,0 L712,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M768,0 L768,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M824,0 L824,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M880,0 L880,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M936,0 L936,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M992,0 L992,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1048,0 L1048,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1104,0 L1104,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1160,0 L1160,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1216,0 L1216,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1272,0 L1272,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1328,0 L1328,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1384,0 L1384,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1440,0 L1440,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1496,0 L1496,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M1552,0 L1552,900" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,35 L1600,35" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,91 L1600,91" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,147 L1600,147" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,203 L1600,203" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,259 L1600,259" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,315 L1600,315" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,371 L1600,371" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,427 L1600,427" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,483 L1600,483" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,539 L1600,539" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,595 L1600,595" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,651 L1600,651" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,707 L1600,707" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,763 L1600,763" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,819 L1600,819" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<path d="M0,875 L1600,875" fill="none" stroke="#35516c" stroke-width="0.65" stroke-linecap="round" />
+<rect x="56" y="48" width="12" height="81" rx="5" fill="#2ae6cd"/>
+<text x="90" y="70" fill="#2ae6cd" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="750" text-anchor="start" >05 / SAFETY</text>
+<text x="88" y="121" fill="#e8f6ff" font-family="DejaVu Sans,Arial,sans-serif" font-size="51" font-weight="800" text-anchor="start" >Fail closed, without fuzzy loopholes</text>
+<text x="89" y="164" fill="#a7bdcf" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="500" text-anchor="start" >The policy can refine decisions; it cannot override a NeMo-native block.</text>
+<path d="M65,851 L1537,851" fill="none" stroke="#35516c" stroke-width="2" stroke-linecap="round" />
+<text x="68" y="876" fill="#a7bdcf" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="500" text-anchor="start" >FUZZY NEMO GUARDRAILS  ·  AN INDEPENDENT SOFTWARE EXTENSION</text>
+<text x="1538" y="876" fill="#a7bdcf" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="500" text-anchor="end" >github.com/AngshulMajumdar/Fuzzy-NeMo-Guardrails</text>
+<rect x="110" y="232" width="1380" height="104" rx="20" fill="#12213d" stroke="#35516c" stroke-width="2"/>
+<rect x="111" y="232" width="12" height="104" rx="5" fill="#f8ca65"/>
+<text x="160" y="269" fill="#f8ca65" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="750" text-anchor="start" >MISSING SCORES</text>
+<text x="160" y="306" fill="#a7bdcf" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="500" text-anchor="start" >No release; obtain trusted detector inputs</text>
+<rect x="1085" y="251" width="350" height="66" rx="16" fill="#f8ca65" opacity=".15"/>
+<text x="1260" y="293" fill="#f8ca65" font-family="DejaVu Sans,Arial,sans-serif" font-size="26" font-weight="800" text-anchor="middle" >REVIEW</text>
+<rect x="110" y="367" width="1380" height="104" rx="20" fill="#12213d" stroke="#35516c" stroke-width="2"/>
+<rect x="111" y="367" width="12" height="104" rx="5" fill="#fc869a"/>
+<text x="160" y="404" fill="#fc869a" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="750" text-anchor="start" >HARD VETO</text>
+<text x="160" y="441" fill="#a7bdcf" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="500" text-anchor="start" >Critical feature crosses a configured veto</text>
+<rect x="1085" y="386" width="350" height="66" rx="16" fill="#fc869a" opacity=".15"/>
+<text x="1260" y="428" fill="#fc869a" font-family="DejaVu Sans,Arial,sans-serif" font-size="26" font-weight="800" text-anchor="middle" >BLOCK</text>
+<rect x="110" y="502" width="1380" height="104" rx="20" fill="#12213d" stroke="#35516c" stroke-width="2"/>
+<rect x="111" y="502" width="12" height="104" rx="5" fill="#52d8f5"/>
+<text x="160" y="539" fill="#52d8f5" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="750" text-anchor="start" >FUZZY RISK</text>
+<text x="160" y="576" fill="#a7bdcf" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="500" text-anchor="start" >Risk thresholds and active rule strengths</text>
+<rect x="1085" y="521" width="350" height="66" rx="16" fill="#52d8f5" opacity=".15"/>
+<text x="1260" y="563" fill="#52d8f5" font-family="DejaVu Sans,Arial,sans-serif" font-size="26" font-weight="800" text-anchor="middle" >ALLOW / REVIEW / BLOCK</text>
+<rect x="110" y="637" width="1380" height="104" rx="20" fill="#12213d" stroke="#35516c" stroke-width="2"/>
+<rect x="111" y="637" width="12" height="104" rx="5" fill="#fc869a"/>
+<text x="160" y="674" fill="#fc869a" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="750" text-anchor="start" >NEMO NATIVE BLOCK</text>
+<text x="160" y="711" fill="#a7bdcf" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="500" text-anchor="start" >Native rail decisions remain authoritative</text>
+<rect x="1085" y="656" width="350" height="66" rx="16" fill="#fc869a" opacity=".15"/>
+<text x="1260" y="698" fill="#fc869a" font-family="DejaVu Sans,Arial,sans-serif" font-size="26" font-weight="800" text-anchor="middle" >BLOCK</text>
+<rect x="294" y="780" width="1012" height="48" rx="17" fill="#2ae6cd" opacity=".12"/>
+<text x="800" y="813" fill="#2ae6cd" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="720" text-anchor="middle" >RELEASE requires an ALLOW verdict and an acceptable native NeMo result.</text>
+</svg>

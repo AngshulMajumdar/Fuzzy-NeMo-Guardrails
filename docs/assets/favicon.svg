@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CSFSM Guardrails">
+  <rect width="64" height="64" rx="16" fill="#102c36"/>
+  <circle cx="22" cy="23" r="5" fill="#89d9bf"/>
+  <circle cx="43" cy="21" r="5" fill="#89d9bf"/>
+  <circle cx="32" cy="44" r="5" fill="#89d9bf"/>
+  <path d="M27 22l11-1M24 27l7 12M41 26l-7 13" fill="none" stroke="#d2f4e2" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1152" height="664" viewBox="0 0 1152 664" role="img" aria-labelledby="title desc">
+<title id='title'>Project the reference policy onto safe support</title><desc id='desc'>Reference probabilities 0.15, 0.55, 0.20, 0.10. With the second action forbidden, remaining mass 0.45 renormalizes to approximately 0.333, 0, 0.444, 0.222. The forbidden action has exact zero probability.</desc>
+<rect width="1152" height="664" rx="30" fill="#f5f5f0"/>
+<path d="M0 182H1152" stroke="#d8e3df"/>
+<rect x="36" y="29" width="66" height="28" rx="14" fill="#d9efe8"/>
+<text x="69" y="48" fill="#008c83" font-size="15" font-weight="800" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif">06</text>
+<text x="120" y="50" fill="#527079" font-size="15" font-weight="700" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">CSFSM  /  VISUAL FIELD GUIDE</text>
+<text x="52" y="109" fill="#102c36" font-size="36" font-weight="800" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">Project the reference policy onto safe support</text>
+<text x="52" y="145" fill="#527079" font-size="18" font-weight="500" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">A masked normalization is the minimum forward-KL change to the policy distribution.</text>
+<path d="M36 614H1116" stroke="#d8e3df"/>
+<text x="52" y="643" fill="#527079" font-size="12" font-weight="700" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">CSFSM GUARDRAILS  ·  ANGSHUL MAJUMDAR  ·  IIIT-DELHI</text>
+<text x="1102" y="643" fill="#527079" font-size="11" font-weight="500" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">FIGURE 06 / 08</text>
+<rect x="52" y="217" width="485" height="296" rx="22" fill="#ffffff" stroke="none" stroke-width="1.4"/>
+<text x="72" y="252" fill="#102c36" font-size="18" font-weight="800" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">REFERENCE  q</text>
+<text x="71" y="299" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">clarify</text>
+<rect x="180" y="284" width="255" height="20" rx="10" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<rect x="180" y="284" width="38.25" height="20" rx="10" fill="#008c83" stroke="none" stroke-width="1.4"/>
+<text x="513" y="300" fill="#102c36" font-size="15" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">0.150</text>
+<text x="71" y="351" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">release</text>
+<rect x="180" y="336" width="255" height="20" rx="10" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<rect x="180" y="336" width="140.25" height="20" rx="10" fill="#d75d48" stroke="none" stroke-width="1.4"/>
+<text x="513" y="352" fill="#102c36" font-size="15" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">0.550</text>
+<text x="71" y="403" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">refuse</text>
+<rect x="180" y="388" width="255" height="20" rx="10" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<rect x="180" y="388" width="51.0" height="20" rx="10" fill="#008c83" stroke="none" stroke-width="1.4"/>
+<text x="513" y="404" fill="#102c36" font-size="15" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">0.200</text>
+<text x="71" y="455" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">stop</text>
+<rect x="180" y="440" width="255" height="20" rx="10" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<rect x="180" y="440" width="25.5" height="20" rx="10" fill="#008c83" stroke="none" stroke-width="1.4"/>
+<text x="513" y="456" fill="#102c36" font-size="15" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">0.100</text>
+<rect x="611" y="217" width="485" height="296" rx="22" fill="#ffffff" stroke="none" stroke-width="1.4"/>
+<text x="631" y="252" fill="#102c36" font-size="18" font-weight="800" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">PROJECTED  p*</text>
+<text x="630" y="299" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">clarify</text>
+<rect x="739" y="284" width="255" height="20" rx="10" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<rect x="739" y="284" width="85.0" height="20" rx="10" fill="#008c83" stroke="none" stroke-width="1.4"/>
+<text x="1072" y="300" fill="#102c36" font-size="15" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">0.333</text>
+<text x="630" y="351" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">release</text>
+<rect x="739" y="336" width="255" height="20" rx="10" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<text x="1072" y="352" fill="#102c36" font-size="15" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">0.000</text>
+<text x="630" y="403" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">refuse</text>
+<rect x="739" y="388" width="255" height="20" rx="10" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<rect x="739" y="388" width="113.33333333333333" height="20" rx="10" fill="#008c83" stroke="none" stroke-width="1.4"/>
+<text x="1072" y="404" fill="#102c36" font-size="15" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">0.444</text>
+<text x="630" y="455" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">stop</text>
+<rect x="739" y="440" width="255" height="20" rx="10" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<rect x="739" y="440" width="56.666666666666664" height="20" rx="10" fill="#008c83" stroke="none" stroke-width="1.4"/>
+<text x="1072" y="456" fill="#102c36" font-size="15" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">0.222</text>
+<path d="M547 364L602 364" stroke="#008c83" stroke-width="3" stroke-linecap="round"/>
+<path d="M591.5 369.8L602 364L591.5 358.2" fill="none" stroke="#008c83" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="575" y="343" fill="#d75d48" font-size="14" font-weight="800" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif">mask</text>
+<rect x="52" y="532" width="1048" height="61" rx="13" fill="#102c36" stroke="none" stroke-width="1.4"/>
+<text x="575" y="571" fill="#ffffff" font-size="22" font-weight="700" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif">p* = argmin KL(p || q), with p(release) = 0 and sum(p) = 1</text>
+</svg>

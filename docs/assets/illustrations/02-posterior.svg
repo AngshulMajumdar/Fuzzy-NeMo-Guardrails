@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1152" height="664" viewBox="0 0 1152 664" role="img" aria-labelledby="title desc">
+<title id='title'>A probability distribution remembers the conversation</title><desc id='desc'>Four mode probabilities change from prior 94% routine and 0.5% probing to posterior 25.1% routine and 63.0% probing after a probing observation. Bayes filter formula below.</desc>
+<rect width="1152" height="664" rx="30" fill="#f5f5f0"/>
+<path d="M0 182H1152" stroke="#d8e3df"/>
+<rect x="36" y="29" width="66" height="28" rx="14" fill="#d9efe8"/>
+<text x="69" y="48" fill="#008c83" font-size="15" font-weight="800" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif">02</text>
+<text x="120" y="50" fill="#527079" font-size="15" font-weight="700" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">CSFSM  /  VISUAL FIELD GUIDE</text>
+<text x="52" y="109" fill="#102c36" font-size="36" font-weight="800" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">A probability distribution remembers the conversation</text>
+<text x="52" y="145" fill="#527079" font-size="18" font-weight="500" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">Evidence updates latent modes; it does not directly grant permission.</text>
+<path d="M36 614H1116" stroke="#d8e3df"/>
+<text x="52" y="643" fill="#527079" font-size="12" font-weight="700" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">CSFSM GUARDRAILS  ·  ANGSHUL MAJUMDAR  ·  IIIT-DELHI</text>
+<text x="1102" y="643" fill="#527079" font-size="11" font-weight="500" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">FIGURE 02 / 08</text>
+<rect x="52" y="213" width="500" height="309" rx="22" fill="#ffffff" stroke="none" stroke-width="1.4"/>
+<text x="74" y="249" fill="#102c36" font-size="18" font-weight="800" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">BEFORE · prior b</text>
+<text x="72" y="301" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">routine</text>
+<rect x="198" y="286" width="256" height="22" rx="11" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<rect x="198" y="286" width="240.64" height="22" rx="11" fill="#008c83" stroke="none" stroke-width="1.4"/>
+<text x="516" y="303" fill="#102c36" font-size="16" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">94.0%</text>
+<text x="72" y="353" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">uncertain</text>
+<rect x="198" y="338" width="256" height="22" rx="11" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<rect x="198" y="338" width="10.24" height="22" rx="11" fill="#008c83" stroke="none" stroke-width="1.4"/>
+<text x="516" y="355" fill="#102c36" font-size="16" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">4.0%</text>
+<text x="72" y="405" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">restricted</text>
+<rect x="198" y="390" width="256" height="22" rx="11" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<rect x="198" y="390" width="4" height="22" rx="11" fill="#008c83" stroke="none" stroke-width="1.4"/>
+<text x="516" y="407" fill="#102c36" font-size="16" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">1.5%</text>
+<text x="72" y="457" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">probing</text>
+<rect x="198" y="442" width="256" height="22" rx="11" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<rect x="198" y="442" width="4" height="22" rx="11" fill="#d75d48" stroke="none" stroke-width="1.4"/>
+<text x="516" y="459" fill="#102c36" font-size="16" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">0.5%</text>
+<rect x="600" y="213" width="500" height="309" rx="22" fill="#ffffff" stroke="none" stroke-width="1.4"/>
+<text x="622" y="249" fill="#102c36" font-size="18" font-weight="800" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">AFTER · probing observation</text>
+<text x="620" y="301" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">routine</text>
+<rect x="746" y="286" width="256" height="22" rx="11" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<rect x="746" y="286" width="64.2816" height="22" rx="11" fill="#008c83" stroke="none" stroke-width="1.4"/>
+<text x="1064" y="303" fill="#102c36" font-size="16" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">25.1%</text>
+<text x="620" y="353" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">uncertain</text>
+<rect x="746" y="338" width="256" height="22" rx="11" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<rect x="746" y="338" width="13.312" height="22" rx="11" fill="#008c83" stroke="none" stroke-width="1.4"/>
+<text x="1064" y="355" fill="#102c36" font-size="16" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">5.2%</text>
+<text x="620" y="405" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">restricted</text>
+<rect x="746" y="390" width="256" height="22" rx="11" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<rect x="746" y="390" width="17.1264" height="22" rx="11" fill="#008c83" stroke="none" stroke-width="1.4"/>
+<text x="1064" y="407" fill="#102c36" font-size="16" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">6.7%</text>
+<text x="620" y="457" fill="#102c36" font-size="16" font-weight="600" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">probing</text>
+<rect x="746" y="442" width="256" height="22" rx="11" fill="#e7ecea" stroke="none" stroke-width="1.4"/>
+<rect x="746" y="442" width="161.28" height="22" rx="11" fill="#d75d48" stroke="none" stroke-width="1.4"/>
+<text x="1064" y="459" fill="#102c36" font-size="16" font-weight="750" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif">63.0%</text>
+<path d="M555 367L594 367" stroke="#008c83" stroke-width="3" stroke-linecap="round"/>
+<path d="M583.5 372.8L594 367L583.5 361.2" fill="none" stroke="#008c83" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="275" y="535" width="603" height="54" rx="13" fill="#102c36" stroke="none" stroke-width="1.4"/>
+<text x="576" y="570" fill="#ffffff" font-size="18" font-weight="700" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif">b_next = normalize( (b T[action]) * B[:, observation] )</text>
+<text x="53" y="602" fill="#527079" font-size="14" font-weight="500" text-anchor="start" font-family="Inter,Segoe UI,Arial,sans-serif">Illustrative numbers: one update with the bundled default transition and emission matrices.</text>
+</svg>

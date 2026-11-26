@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Fuzzy NeMo Guardrails | Dual-engine fuzzy decisions for NVIDIA NeMo</title><meta name="description" content="An illustrated guide to Fuzzy NeMo Guardrails, a CPU-friendly fuzzy decision layer compatible with NVIDIA NeMo LLMRails and IORails."><meta name="theme-color" content="#081225"><meta property="og:title" content="Fuzzy NeMo Guardrails"><meta property="og:description" content="A fuzzy decision layer for both NeMo engines. Code, illustrations, and a live CPU-only demo."><meta property="og:type" content="article"><meta property="og:image" content="https://raw.githubusercontent.com/AngshulMajumdar/Fuzzy-NeMo-Guardrails/main/docs/assets/01-cover.png"><link rel="stylesheet" href="assets/site.css"></head>
+<body><nav><a class="logo" href="#top">◈ Fuzzy NeMo Guardrails</a><div class="links"><a href="#where-the-layer-sits">Architecture</a><a href="#both-nemo-engines-one-shared-fuzzy-policy">Dual engine</a><a href="https://github.com/AngshulMajumdar/Fuzzy-NeMo-Guardrails" target="_blank" rel="noopener">GitHub ↗</a><a href="https://huggingface.co/spaces/Angshul/Fuzzy-NeMo-Guardrails" target="_blank" rel="noopener">Live demo ↗</a></div></nav><main id="top"><h1 id="fuzzy-nemo-guardrails-adding-degrees-of-judgment-to-nvidia-s-guardrails">Fuzzy NeMo Guardrails: Adding Degrees of Judgment to NVIDIA's Guardrails</h1>
+<p><strong>A practical, CPU-friendly fuzzy decision layer for both LLMRails and IORails.</strong></p>
+<p><strong>Source code:</strong> <a href="https://github.com/AngshulMajumdar/Fuzzy-NeMo-Guardrails">GitHub — Fuzzy NeMo Guardrails</a><br/>
+<strong>Interactive demo:</strong> <a href="https://huggingface.co/spaces/Angshul/Fuzzy-NeMo-Guardrails">Hugging Face — Fuzzy NeMo Guardrails</a></p>
+<p><img alt="Fuzzy NeMo Guardrails: a fuzzy decision layer for NVIDIA NeMo" src="assets/01-cover.png"/></p>
+<p><em>Concept illustration of the project. The numbers are illustrative, not real detector measurements.</em></p>
+<h2 id="guardrails-need-more-than-a-binary-threshold">Guardrails need more than a binary threshold</h2>
+<p>A conventional guardrail often ends with a yes or no: let the request proceed, or stop it. But in a real retrieval-augmented generation (RAG) application, signals rarely line up so neatly. A query may have some suspicious structure without being clearly malicious. A retrieved passage may partially support a generated answer. The detector may be uncertain, while the application's rules are not.</p>
+<p><strong>Fuzzy NeMo Guardrails</strong> is a small, independent software extension that handles these intermediate cases. It does not replace NVIDIA NeMo Guardrails, and it does not introduce another language model. It accepts <strong>normalized scores produced by trusted detectors</strong>, applies configurable fuzzy rules, and returns one of three decisions: <strong>ALLOW, REVIEW, or BLOCK</strong>.</p>
+<p>The critical distinction is that REVIEW is a hold, <strong>not</strong> permission to continue. Native NeMo guardrails remain in force. The fuzzy layer can never turn a NeMo BLOCK into an ALLOW.</p>
+<h2 id="where-the-layer-sits">Where the layer sits</h2>
+<p><img alt="How fuzzy inference works alongside RAG and NeMo" src="assets/02-architecture.png"/></p>
+<p><em>The extension consumes external input and output detector scores; the configured NeMo engine still enforces its own native rails.</em></p>
+<p>Think of the implementation as a policy decision layer around an existing NeMo application. A trusted detector supplies an injection-risk or toxicity-risk score for an incoming request. The fuzzy policy translates those numbers into membership strengths, activates applicable rules, and decides whether to allow the next step, hold for review, or block it.</p>
+<p>Where output protection is configured, an external scorer can assess the generated response—for example, its unsupported-claim risk—and the wrapper withholds the response unless the output policy allows it. <strong>The demo uses manually supplied scores</strong>, not automatic prompt-injection or hallucination detection. Production deployments need real, validated detector integrations.</p>
+<h2 id="what-fuzzy-actually-means-here">What fuzzy actually means here</h2>
+<p><img alt="Fuzzy memberships and an example REVIEW decision" src="assets/03-fuzzy-mechanics.png"/></p>
+<p><em>Exact example from the published YAML policy: injection risk 0.50, toxicity risk 0.10, and the medium-risk rule fires; the resulting input decision is REVIEW.</em></p>
+<p>Fuzziness here is a way to express gradual rule applicability. A detector score can belong partly to <em>low</em>, <em>medium</em>, and <em>high</em> linguistic categories. Each rule receives a firing strength, so the policy need not pretend that an arbitrary boundary makes two nearly identical requests fundamentally different.</p>
+<p>The sample input policy uses <strong>Sugeno</strong> inference; the sample output policy uses <strong>Mamdani</strong> inference. Both are configured in YAML, including membership shapes, rule conditions, thresholds and hard-veto limits. The engine reports the active rules and their strengths, so an application can explain <em>why</em> it reached a decision. These fuzzy membership values are <strong>not calibrated probabilities</strong>.</p>
+<p>The example policy is deliberately illustrative, not a ready-made security standard. In production, application owners are responsible for detector quality, threshold selection and checking the consequences of false blocks and false allows.</p>
+<h2 id="both-nemo-engines-one-shared-fuzzy-policy">Both NeMo engines: one shared fuzzy policy</h2>
+<p><img alt="LLMRails and IORails compatibility architecture" src="assets/04-dual-adapter.png"/></p>
+<p><em>The shared FuzzyPolicy is separate from the two NeMo integrations, avoiding an unnecessary fork of NVIDIA's project.</em></p>
+<p>This package supports <strong>LLMRails</strong>, the legacy NeMo execution engine, through a Python wrapper and an optional custom action that can run inside a Colang 1.0 flow. It also supports <strong>IORails</strong>, the newer execution engine, through an external Python wrapper using public checking and generation APIs.</p>
+<p>The distinction matters: IORails in NeMo 0.25.0 does not execute the legacy Python custom-action mechanism, so this project <strong>does not claim a native Colang-style IORails action</strong>. It supplies a compatible wrapper instead. Neither adapter runs its own LLM or manufactures detector scores.</p>
+<h2 id="safety-rules-remain-absolute">Safety rules remain absolute</h2>
+<p><img alt="Fail-closed controls and native NeMo veto" src="assets/05-fail-closed.png"/></p>
+<p><em>A fuzzy score can refine a policy decision, but hard vetoes and native NeMo blocks still take precedence.</em></p>
+<p>A useful rule engine must be predictable at its boundaries. In Fuzzy NeMo, missing mandatory scores result in REVIEW and withheld output; configured hard vetoes trigger BLOCK. Unexpected native statuses are withheld for REVIEW. An output that receives REVIEW or BLOCK is not returned to the caller, and the wrapper deliberately does not support streaming unchecked tokens.</p>
+<p>This also means a low fuzzy risk score cannot bypass a NeMo-native block. In effect, the extension adds expressive policy decisions <strong>without relaxing absolute safety requirements</strong>.</p>
+<h2 id="try-it-three-decisions-from-the-live-demo">Try it: three decisions from the live demo</h2>
+<p><img alt="Three verified live demo results" src="assets/06-live-demo.png"/></p>
+<p><em>Three example API calls to the published Space on November 26, 2026. All values are manually supplied test inputs.</em></p>
+<p>In the <a href="https://huggingface.co/spaces/Angshul/Fuzzy-NeMo-Guardrails">live Hugging Face Space</a>, you can move three sliders: injection risk, toxicity risk and unsupported-claim risk. The interface displays the decision, the computed fuzzy risk and the activated rules. A low-risk example returns ALLOW; a high injection-risk example returns BLOCK; and a high unsupported-claim-risk example also returns BLOCK.</p>
+<p>This is intentionally a <strong>CPU-only, no-LLM demonstration of the fuzzy policy</strong>, not a fully connected production RAG security gateway. It makes the decision logic easy to examine and reproduce.</p>
+<h2 id="how-to-run-it-yourself">How to run it yourself</h2>
+<p>Clone the <a href="https://github.com/AngshulMajumdar/Fuzzy-NeMo-Guardrails">GitHub repository</a> and install the package:</p>
+<pre><code class="language-bash">git clone https://github.com/AngshulMajumdar/Fuzzy-NeMo-Guardrails.git
+cd Fuzzy-NeMo-Guardrails
+pip install -e '.[api,test]'
+pytest -q
+</code></pre>
+<p>Evaluate an input policy directly:</p>
+<pre><code class="language-bash">fuzzy-nemo --config examples/policy.yaml --phase input --scores '{"injection_risk": 0.05, "toxicity_risk": 0.10}'
+</code></pre>
+<p>To run the actual NeMo 0.25.0 integration examples locally:</p>
+<pre><code class="language-bash">pip install -e '.[nemo]'
+python examples/legacy_colang/run_local.py
+python examples/iorails/run_local.py
+</code></pre>
+<p>The repository also includes a FastAPI service, Docker configuration, automated tests and reproducible integration examples. GitHub Actions checks both supported Python versions and runs a dedicated NeMo 0.25.0 integration suite.</p>
+<h2 id="what-this-package-is-and-is-not">What this package is—and is not</h2>
+<p>Fuzzy NeMo Guardrails is <strong>an implementation project</strong>: configurable fuzzy policies, explainable decisions, conservative integration with two NeMo engines, and a demonstrable CPU-only interface. It is independent of NVIDIA and is <strong>not</strong> an official NVIDIA product or a replacement for native NeMo safety controls.</p>
+<p>The implementation does <strong>not</strong> independently detect prompt injection, toxicity, hallucination or grounding failures. Those scores must come from external, trusted detectors; the application must withhold or handle REVIEW results appropriately. Model-backed generation and real-world RAG deployments still require application-level testing.</p>
+<p><strong>Explore the code:</strong> <a href="https://github.com/AngshulMajumdar/Fuzzy-NeMo-Guardrails">github.com/AngshulMajumdar/Fuzzy-NeMo-Guardrails</a><br/>
+<strong>Run the live demo:</strong> <a href="https://huggingface.co/spaces/Angshul/Fuzzy-NeMo-Guardrails">huggingface.co/spaces/Angshul/Fuzzy-NeMo-Guardrails</a></p>
+<p><em>NeMo Guardrails is a project of NVIDIA. This extension is independent and Apache-2.0 licensed. Figures are original illustrations created for this project.</em></p>
+</main><footer>Independent open-source extension · Built for CPU-first testing · <a href="https://github.com/AngshulMajumdar/Fuzzy-NeMo-Guardrails">Source code</a> · <a href="https://huggingface.co/spaces/Angshul/Fuzzy-NeMo-Guardrails">Hugging Face Space</a></footer></body></html>
